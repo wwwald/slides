@@ -46,21 +46,21 @@
 						<a href="http://twitter.com/wwwald">@wwwald</a><small style='margin-left: 2ex; color: #ccc'>aka Arnout Standaert</small>
 					</p>
                     <aside class="notes">
-                        <ul>
-                            <li>not pretending to give the ultimate expert overview</li>
-                            <li>bird's eye view</li>
-                        </ul>
+                        <p>not pretending to give the ultimate expert overview</p>
+                        <p>bird's eye view</p>
                     </aside>
 
 				</section>
 
                 <section>
                     <h2 style="text-align: left;">me?</h2>
-                    <p style="text-align: right;">researcher turned wannabe developer<br/>
-                    job 1 - microbe modelling<br/>
-                    job 2 - Oracle detour - LIMS<br/>
-                    job 3 - exposure modelling<br/>
-                    web dev amateur</p>
+                    <p class="fragment">researcher turned wannabe developer</p>
+                    <div class="fragment">
+                        <p>job 1 &mdash; microbe modelling</p>
+                        <p>job 2 &mdash; Oracle detour - LIMS</p>
+                        <p>job 3 &mdash; exposure modelling</p>
+                    </div>
+                    <p class="fragment">web dev amateur</p>
                     <div style='position: absolute;bottom: 0%;'>
                         <img src='./img/destandaert.jpg' width=250 height=250/>
                     </div>
@@ -70,17 +70,18 @@
 
                 <section>
                     <h2 style="text-align: left;">my workplace?</h2>
-                    <p style="text-align: right;">
-                        <p class="fragment" style="text-align: right;">health research</p>
+                    <p>
+                        <p class="fragment">health research</p>
                         <div class="fragment">
-                            <p style="text-align: right;">historical baggage: Excel &hellip;</p>
-                            <p style="text-align: right;">smartass <a href="http://twitter.com/wwwald">@wwwald</a> arrives: MATLAB &hellip;</p>
+                            <p>historical baggage: Excel &hellip;</p>
+                            <p>smartass <a href="http://twitter.com/wwwald">@wwwald</a> arrives: MATLAB &hellip;</p>
                         </div>
                     <div class="fragment">
                         <h2 style="text-align: left;">but now...</h2>
-                        <p class="fragment" style="text-align: right;">large-scale measurements / cheap sensors / IoT</p>
-                        <p class="fragment" style="text-align: right;">multi-channel publishing of results & models</p>
-                        <p class="fragment" style="text-align: right;">need for all-round powerful platform</p>
+                        <p class="fragment">cheap sensors / IoT / large-scale measurements</p>
+                        <p class="fragment"><img src="./img/bigdata.svg" width=300/></p>
+                        <p class="fragment">multi-channel publishing of results & models</p>
+                        <p class="fragment">need for all-round powerful platform</p>
                     </div>
                     </p>
                 </section>
@@ -88,154 +89,211 @@
                 <section>
                     <h2 style="text-align: left;">Python!</h2>
                     <p style="text-align: left;">all the versatility we need</p>
-                    <p style="text-align: right;">
+                    <p>
                         <ul>
-                            <li>low barrier to entry</li>
-                            <li>scripting</li>
-                            <li>interactive work</li>
-                            <li>web platforms</li>
-                            <li>visualization</li>
-                            <li>modelling / numerics / <emph>data analysis</emph></li>
-                            <li>niche: image analysis</li>
-                            <li>niche: bioinformatics</li>
-                            <li>niche: GIS</li>
+                            <p class="fragment">low barrier to entry</p>
+                            <p class="fragment">scripting</p>
+                            <div class="fragment">
+                                <div class="fragment fade-out" data-autoslide="500" style='position: absolute;left: 0%; top:35%;'>
+                                    <img src='./img/ipython_example.png' width=450 />
+                                </div>
+                                <p>interactive work</p>
+                            </div>
+                            <div class="fragment">
+                                <div class="fragment fade-out" data-autoslide="500" style='position: absolute;left: 0%; top:30%;'>
+                                    <img src='./img/django-logo-negative.svg' width=250 /><br/>
+                                    <img style="margin-left:5em" src='./img/flask.svg' width=250 />
+                                </div>
+                                <p>web platforms</p>
+                            </div>
+                            <div class="fragment">
+                                <div class="fragment fade-out" data-autoslide="500" style='position: absolute;left: 0%; top:30%;'>
+                                    <img src='./img/seaborn_example.svg' width=250 /><br/>
+                                    <img style="position: relative; top: -150px; margin-left: 250px;" src='./img/bokeh_example.svg' width=250 />
+                                </div>
+                                <p>visualization</p>
+                            </div>
+                            <p class="fragment" style="color: yellow;text-align: right;">modelling / numerics / <emph>data analysis</emph></p>
+                            <div class="fragment">
+                                <div class="fragment fade-out" data-autoslide="500" style='position: absolute;left: 5%; top:30%;'>
+                                    <img src='./img/opencv_demo.png' width=250 />
+                                </div>
+                                <p>(niche) image analysis</p>
+                            </div>
+                            <div class="fragment">
+                                <div class="fragment fade-out" data-autoslide="500" style='position: absolute;left: 0%; top:30%;'>
+                                    <img src='./img/bioinfo.png' width=250 /><br/>
+                                    <img style="" src='./img/dna.svg' width=150 />
+                                </div>
+                                <p>(niche) bioinformatics</p>
+                            </div>
+                            <div class="fragment">
+                                <div class="fragment fade-out" data-autoslide="500" style='position: absolute;left: -15%; top:25%;'>
+                                    <img src='./img/uk.svg' width=400 />
+                                </div>
+                                <p>(niche) GIS</p>
+                            </div>
                         </ul>
                     </p>
                 </section>
 
                 <section>
                     <section>
-                        <h2 style="text-align: left;">The scientific/numeric Python stack</h2>
-                        <p style="text-align: right;">
-                            <ul>
-                                <li>(predecessors of) NumPy</li>
-                                <li>SciPy</li>
-                                <li>IPython</li>
-                                <li>Matplotlib</li>
-                                <li>Pandas</li>
-                                <li>... Sympy ... scikit-learn ... statsmodels ...</li>
-                            </ul>
+                        <h2 style="text-align: left;">The SciPy stack</h2>
+                        <p style="text-align: left; color: grey"><small>actually, almost chronologically</small></p>
+                        <p>
+                                <p>(predecessors of) NumPy</p>
+                                <p>SciPy</p>
+                                <p>IPython</p>
+                                <p>Matplotlib</p>
+                                <p>Pandas</p>
+                                <p>... Sympy ... scikit-learn ... statsmodels ...</p>
                         </p>
                     </section>
                     <section>
                         <h2 style="text-align: left;">NumPy</h2>
-                            <ul>
-                                <li>base N-dimensional array data type. Matrices!</li>
-                                <li>C/C++ and Fortran facilities</li>
-                                <li>matrix algebra</li>
-                            </ul>
+                        <p>base N-dimensional array data type</p>
+                        <p>MATRICES!</p>
+                        <p>C/C++ and Fortran facilities</p>
+                        <div style="position: absolute; left: 10%; bottom: -10%;">
+                            <img src="./img/matrix.png"/>
+                        </div>
+                        <p>matrix algebra</p>
                     </section>
                     <section>
                         <h2 style="text-align: left;">SciPy</h2>
-                            <ul>
-                                <li>builds on NumPy</li>
-                                <li>science &amp; engineering extensions</li>
-                                <li>optimization</li>
-                                <li>linear algebra</li>
-                                <li>integration</li>
-                                <li>interpolation</li>
-                                <li>signal processing</li>
-                                <li>image processing</li>
-                            </ul>
+                        <div style="position: fixed; left: 0%;top:20%;">
+                            <img src="./img/scipy.svg" width=350/>
+                            <br/>
+                            <img src="./img/3dinterpolation.svg" style="padding-left: 5em;"/>
+                        </div>
+                        <p>builds on NumPy</p>
+                        <p>science &amp; engineering extensions</p>
+                        <p>optimization</p>
+                        <p>linear algebra</p>
+                        <p>integration</p>
+                        <p>interpolation</p>
+                        <p>signal processing</p>
+                        <p>image processing</p>
                     </section>
                     <section>
                         <h2 style="text-align: left;">IPython</h2>
-                            <ul>
-                                <li>rich interactive REPL</li>
-                                <li>natural fit for interactive data analysis</li>
-                                <li>notebooks!<small>*</small></li>
-                            </ul>
+                        <div style='position: absolute;left: 0%; top:35%;'>
+                            <img src='./img/ipython_example.png' width=500 />
+                        </div>
+                        <p>rich interactive REPL</p>
+                        <p>interactive data analysis</p>
+                        <p>notebooks!<small>*</small></p>
                     </section>
                     <section>
                         <h2 style="text-align: left;">Matplotlib</h2>
-                            <ul>
-                                <li>mother of Py viz modules</li>
-                                <li>efficient &amp; accessible</li>
-                                <li>base for advanced viz modules<small>*</small></li>
-                            </ul>
+                        <div style='position: absolute;left: -5%; top:35%;'>
+                            <img src='./img/matplotlib.png' width=500 />
+                        </div>
+                        <p><br/>2D plotting</p>
+                        <p>mother of Py viz modules</p>
+                        <p>efficient &amp; accessible</p>
+                        <p>base for advanced viz<small>*</small></p>
                     </section>
                     <section>
+                        <div style='position: absolute; right: 0%;'>
+                            <img src='./img/pandas.png' width=500 />
+                        </div>
                         <h2 style="text-align: left;">Pandas</h2>
-                            <ul>
-                                <li>higher level data structures</li>
-                                <li>efficient &amp; accessible analysis tools</li>
-                                <li>godsend for quick & interactive data analysis<small>*</small></li>
-                            </ul>
+                        <p>&nbsp;</p>
+                        <p>higher level data structures</p>
+                        <p style="font-size: smaller; color: grey;">Series & DataFrames inspired by R</p>
+                        <p>efficient &amp; accessible analysis tools</p>
+                        <p>godsend for quick & interactive data analysis</p>
                     </section>
                 </section>
 
-                <section>
+                <section data-transition="slide-in fade-out">
                     <h2 style="text-align: left;">IPython notebook</h2>
-                    <p style="text-align: right;">
-                        <ul>
-                            <li>in-browser interactive REPL</li>
-                            <li>interactive work</li>
-                            <li>web platforms</li>
-                            <li>visualization</li>
-                            <li>modelling / numerics / <emph>data analysis</emph></li>
-                            <li>niche: image analysis</li>
-                            <li>niche: bioinformatics</li>
-                            <li>niche: GIS</li>
-                        </ul>
-                    </p>
+                    <div style='position: absolute;left: 5%; top:35%;'>
+                        <img src='./img/ipynb.png' width=400 />
+                    </div>
+                    <br/>
+                    <p>in-browser interactive REPL</p>
+                    <p>low barrier of entry!</p>
+                    <p>interactive analysis</p>
+                    <p>collaboration</p>
+                    <p>reproducible research</p>
+                    <p>versioning - GitHub</p>
+                </section>
+                <section data-transition="fade-in slide-out">
+                    <h2 style="text-align: left;"><strike>IPython</strike> Jupyter notebook</h2>
+                    <div style='position: absolute;left: 5%; top:35%;'>
+                        <img src='./img/ipynb.png' width=400 />
+                    </div>
+                    <br/>
+                    <p>next gen IPy Notebook</p>
+                    <p>multi-user server</p>
+                    <p>pluggable kernel model</p>
+                    <p>not only Python!</p>
+                    <p>&nbsp;</p>
+                    <p style="font-size: smaller; color: grey;">R, Julia, Ruby, Scala, Perl, <br/>Octave, Matlab, Javascript, <br/>Redis, Bash, &hellip;</p>
                 </section>
 
                 <section>
                     <h2 style="text-align: left;">Anaconda</h2>
-                    <p style="text-align: right;">
-                        <ul>
-                            <li>Python data science kickstart</li>
-                            <li>integrated Python distribution</li>
-                            <li>scientific & engineering focus</li>
-                            <li>SciPy stack installed by default</li>
-                            <li>conda (pip replacement)</li>
-                        </ul>
+                    <p>
+                        <p>all-in-one Python data science kickstart</p>
+                        <p>integrated Python distribution</p>
+                        <p>scientific & engineering focus</p>
+                        <p>SciPy stack installed by default</p>
+                        <p>conda (pip replacement)</p>
+                        <p></p>
                     </p>
                 </section>
 
                 <section>
                     <h2 style="text-align: left;">... and so much more</h2>
                     <h3>visualization</h3>
-                    <p style="text-align: right;">
-                        <ul>
-                            <li>Seaborn (fancy Matplotlib)</li>
-                            <li>Bokeh (browser based output)</li>
-                            <li>web platforms</li>
-                            <li>visualization</li>
-                            <li>modelling / numerics / <emph>data analysis</emph></li>
-                            <li>niche: image analysis</li>
-                            <li>niche: bioinformatics</li>
-                            <li>niche: GIS</li>
-                        </ul>
-                    </p>
+                    <div class="fragment">
+                        <div class="fragment fade-out" data-autoslide="500" style='position: absolute;left: 0%; top:25%;'>
+                            <img src='./img/seaborn_gallery.png' width=600 />
+                        </div>
+                        <p>Seaborn</p>
+                        <p style="font-size: smaller; color: grey;">fancy matplotlib</p>
+                    </div>
+                    <div class="fragment">
+                        <div class="fragment fade-out" data-autoslide="500" style='position: absolute;left: 0%; top:25%;'>
+                            <img src='./img/bokeh_gallery.png' width=600 />
+                        </div>
+                        <p>Bokeh</p>
+                        <p style="font-size: smaller; color: grey;">browser based output</p>
+                    </div>
+                    <div class="fragment">
+                        <div class="fragment fade-out" style='position: absolute;left: 0%; top:25%;'>
+                            <img src='./img/mayavi_gallery.png' width=600 />
+                        </div>
+                        <p>Mayavi</p>
+                        <p style="font-size: smaller; color: grey;">advanced 3D visualization</p>
+                    </div>
                 </section>
 
                 <section>
                     <h2 style="text-align: left;">... and so much more</h2>
                     <h3>integration</h3>
-                    <p style="text-align: right;">
-                        <ul>
-                            <li>RPy - for heavy statistics</li>
-                            <li>pg-python - Postgres stored procedures</li>
-                            <li>Numba, Cython - compile Py for performance </li>
-                            <li>PyAutoGUI - automating nasty proprietary interfaces</li>
-                        </ul>
-                    </p>
+                        <p><code>RPy</code> &mdash; for heavy statistics</p>
+                        <p><code>pg-python</code> &mdash; Postgres stored procedures</p>
+                        <p><code>Numba</code>, <code>Cython</code> &mdash; compile Py for performance </p>
+                        <p><code>sqlalchemy</code> &mdash; universal DB access</p>
+                        <p><code>pywinauto</code> &mdash; automating nasty proprietary interfaces</p>
+                        <p>&hellip;</p>
                 </section>
 
                 <section>
                     <h2 style="text-align: left;">... and so much more</h2>
-                    <h3>specific features</h3>
-                    <p style="text-align: right;">
-                        <ul>
-                            <li>PIL / Pillow - image analysis</li>
-                            <li>Biopython - bioinformatics</li>
-                            <li>OGR/GDAL bindings - GIS analyses</li>
-                            <li>SQLAlchemy - universal DB access</li>
-                            <li>PyAutoGUI - automating nasty proprietary interfaces</li>
-                            <li>...</li>
-                        </ul>
-                    </p>
+                    <h3>application specific</h3>
+                        <p><code>PIL</code> / <code>Pillow</code> &mdash; image analysis</p>
+                        <p><code>Biopython</code> &mdash; bioinformatics</p>
+                        <p>OGR/GDAL bindings &mdash; GIS analyses</p>
+                        <p>...</p>
+                </section>
+                <section>
+                    <h2 style="text-align: left;">... thanks!</h2>
                 </section>
 
 
