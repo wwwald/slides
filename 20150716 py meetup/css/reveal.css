@@ -1173,3 +1173,11 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+/*********************************************
+ * wwwald customizations
+ *********************************************/
+
+.reveal p {
+    margin: 0px;
+}
